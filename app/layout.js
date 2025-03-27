@@ -1,22 +1,27 @@
-import { Inter } from "next/font/google";
+import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
-const interFont = Inter({
+const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
 
+const robotoMono = Roboto_Mono({
+  variable: "--font-roboto-mono",
+  subsets: ["latin"],
+});
+
 export const metadata = {
-  title: "Chimp Hacks",
-  description: "Join us for exciting coding sessions and hackathons!",
+  title: "Supvote",
+  description: "Support and get supported",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${interFont.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${robotoMono.variable} antialiased`}>
+        <Analytics />
         {children}
       </body>
     </html>

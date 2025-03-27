@@ -1,5 +1,5 @@
 {
-  "name": "chimphacks",
+  "name": "supvote",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,17 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer-motion": "^12.6.2",
-    "next": "15.2.4",
+    "@vercel/analytics": "^1.5.0",
+    "firebase": "^11.3.1",
+    "framer-motion": "^12.4.7",
+    "next": "15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-firebase-hooks": "^5.1.1",
     "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "15.2.4",
-    "tailwindcss": "^4"
+    "eslint-config-next": "15.1.7",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
   }
 }
