@@ -61,7 +61,7 @@ export default function Home() {
         </motion.div>
         
         <p className="text-xl text-center max-w-lg">
-          Join us for exciting coding sessions, hackathons, and more! Let's innovate together as part of the Hack Club community.
+          Join us for exciting coding sessions, hackathons, and more! Let&apos;s innovate together as part of the Hack Club community.
         </p>
 
         {/* Vision Section */}
