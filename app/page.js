@@ -6,7 +6,13 @@ import { BsSun, BsMoon } from "react-icons/bs";
 import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check localStorage only on the client side
+    const darkModePreference = localStorage.getItem('darkMode') === 'true';
+    setIsDarkMode(darkModePreference);
+  }, []);
 
   const toggleDarkMode = () => {
     setIsDarkMode(prevMode => {
