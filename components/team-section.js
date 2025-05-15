@@ -89,7 +89,7 @@ export function TeamSection() {
         >
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-2">The Squad</h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            The awesome humans behind ChimpHacks. We're just regular teens who love to code!
+            The awesome humans behind ChimpHacks. We&apos;re just regular teens who love to code!
           </p>
           
           <div className="mt-4 flex justify-center">
@@ -233,7 +233,7 @@ export function TeamSection() {
             <span className="inline-block mb-4 text-3xl">🤝</span>
             <h3 className="text-xl font-bold mb-2">Be Part of Something Cool</h3>
             <p className="mb-4 text-muted-foreground">
-              Whether you've been coding for years or just starting out, we'd love to have you join us! 
+              Whether you&apos;ve been coding for years or just starting out, we&apos;d love to have you join us! 
               No interviews or applications - just come hang out.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">

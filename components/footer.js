@@ -162,7 +162,7 @@ export function Footer() {
               transition={{ delay: 0.4 }}
               className="text-xs text-muted-foreground bg-muted/50 px-3 py-1 rounded-full font-mono"
             >
-              // TODO: Conquer the world with code
+              {/* TODO: Conquer the world with code */}
             </motion.div>
           </div>
         </div>

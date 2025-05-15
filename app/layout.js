@@ -2,6 +2,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import Image from "next/image";
 
 const fontSans = GeistSans;
 const fontMono = GeistMono;
@@ -19,17 +20,18 @@ export default function RootLayout({ children }) {
       >
         {/* Hack Club Banner */}
         <a href="https://hackclub.com/" className="hack-club-banner block">
-          <img 
+          <Image 
             style={{ 
               position: "absolute", 
               top: 0, 
               left: 10, 
               border: 0, 
-              width: 256, 
               zIndex: 999 
             }} 
             src="https://assets.hackclub.com/banners/2025.svg" 
             alt="Hack Club"
+            width={256}
+            height={256}
           />
         </a>
         

@@ -155,7 +155,7 @@ export function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.7 }}
             >
-              We're just high schoolers with big ideas! Join our coding sessions and hackathons where we build cool stuff, learn from each other, and have a blast.
+              We&apos;re just high schoolers with big ideas! Join our coding sessions and hackathons where we build cool stuff, learn from each other, and have a blast.
             </motion.p>
             
             <div className="flex flex-wrap gap-4 justify-center">
