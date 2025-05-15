@@ -1,10 +1,10 @@
-import { Inter } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
 
-const interFont = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
+const fontSans = GeistSans;
+const fontMono = GeistMono;
 
 export const metadata = {
   title: "Chimp Hacks",
@@ -13,11 +13,34 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${interFont.variable} antialiased`}
+        className={`${fontSans.variable} ${fontMono.variable} min-h-screen font-sans antialiased`}
       >
-        {children}
+        {/* Hack Club Banner */}
+        <a href="https://hackclub.com/" className="hack-club-banner block">
+          <img 
+            style={{ 
+              position: "absolute", 
+              top: 0, 
+              left: 10, 
+              border: 0, 
+              width: 256, 
+              zIndex: 999 
+            }} 
+            src="https://assets.hackclub.com/banners/2025.svg" 
+            alt="Hack Club"
+          />
+        </a>
+        
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
